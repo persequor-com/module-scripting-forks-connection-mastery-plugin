@@ -13,6 +13,7 @@ export default function (editor: NodeEditor, keyCode: string) {
     editor.on('connectiondrop', io => {
         if(!mouseEvent) throw 'Error not found';
         if(!holder.holding) return;
+        // TODO: Return if a connection will be made
 
         targetIO = io;
 
